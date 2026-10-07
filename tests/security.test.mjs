@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createSession,validSession,passwordMatches,SESSION_SECONDS} from '../lib/auth/session.ts';
+import {contentSchema,withYear,ordered} from '../lib/schema.ts';
+process.env.ADMIN_PASSWORD='test-password-for-security-checks';
+process.env.SESSION_SECRET='a'.repeat(64);
+test('valid sessions authenticate, tampered and expired sessions fail',()=>{const now=Date.now(),token=createSession(now);assert.equal(validSession(token,now),true);assert.equal(validSession(`${token.slice(0,-8)}tampered`,now),false);assert.equal(validSession(token,now+(SESSION_SECONDS+1)*1000),false);assert.equal(validSession(undefined),false);assert.equal(validSession('malformed'),false);});
+test('password comparisons and password rotation',()=>{assert.equal(passwordMatches('test-password-for-security-checks'),true);assert.equal(passwordMatches('incorrect'),false);const token=createSession();process.env.ADMIN_PASSWORD='rotated-password';assert.equal(validSession(token),false);process.env.ADMIN_PASSWORD='test-password-for-security-checks';});
+test('production refuses the development password',()=>{const old=process.env.NODE_ENV;process.env.NODE_ENV='production';process.env.ADMIN_PASSWORD='ana borio';assert.throws(()=>createSession());process.env.ADMIN_PASSWORD='test-password-for-security-checks';process.env.NODE_ENV=old||'test';});
+const defaults=JSON.parse(readFileSync(new URL('../data/default-content.json',import.meta.url),'utf8'));
+test('complete fallback validates and contains the supplied contact information',()=>{assert.equal(contentSchema.safeParse(defaults).success,true);assert.deepEqual(defaults.submissionGuidelines.contacts.map(c=>c.email),['eyadalaa@aiesec.net','Mayarhalfaya@aiesec.net']);assert.equal(defaults.footer.developerCredit,'Developed by Mohammed Tamer');assert.equal(defaults.questionnaire.groups.reduce((n,g)=>n+g.questions.length,0),18);});
+test('unsafe URLs, invalid colors, missing sections and out-of-range opacity are rejected',()=>{for(const mutate of [c=>{c.hero.primaryButtonUrl='javascript:alert(1)'},c=>{c.hero.backgroundImage='//evil.example/image'},c=>{c.settings.primaryColor='red; background:url(evil)'},c=>{delete c.timeline},c=>{c.hero.backgroundWordOpacity=4}]){const content=structuredClone(defaults);mutate(content);assert.equal(contentSchema.safeParse(content).success,false);}});
+test('global year and enabled ordering behave consistently',()=>{assert.equal(withYear('Application {year} · {year}','28.29'),'Application 28.29 · 28.29');assert.deepEqual(ordered([{enabled:true,order:2},{enabled:false,order:0},{enabled:true,order:1}]).map(x=>x.order),[1,2]);});

@@ -1,0 +1,39 @@
+/* Scoped refinements: preserve the surrounding site and its existing theme. */
+.commitments .commitment-card { isolation:isolate; padding:28px 24px; }
+.commitment-card .card-number { position:absolute; z-index:0; top:12px; right:15px; font-size:clamp(76px,7vw,100px); line-height:1; color:var(--navy); opacity:.09; pointer-events:none; user-select:none; }
+.commitment-copy { position:relative; z-index:1; padding-top:12px; min-width:0; }
+.commitment-copy h3,.commitment-copy strong,.commitment-copy p { overflow-wrap:anywhere; }
+.commitment-copy strong { display:block; margin-bottom:8px; font-size:14px; }
+.functional-accordion .accordion-title { min-width:0; overflow-wrap:anywhere; }
+.functional-accordion h3 button { justify-content:space-between; gap:20px; }
+.functional-accordion h3 button>svg { margin-left:auto; flex-shrink:0; }
+.functional-accordion .accordion-inside { padding:0 36px 25px 4px; }
+.functional-accordion ol { list-style:decimal; }
+.functional-accordion li { overflow-wrap:anywhere; white-space:pre-line; }
+.guideline-with-contacts>div { min-width:0; width:100%; }
+.guideline-contacts { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:20px 0 0; }
+.guideline-contacts>a { align-items:flex-start; gap:10px; min-width:0; padding:16px 14px; font-size:14px; }
+.guideline-contacts>a>svg { margin-top:4px; margin-left:0!important; }
+.guideline-contacts>a>span { min-width:0; overflow-wrap:anywhere; }
+.guideline-contacts small { font-size:12px; letter-spacing:.02em; }
+.hero-collage .photo:has(img)::after { content:''; position:absolute; inset:0; background:var(--navy); opacity:.12; pointer-events:none; }
+.hero-word { z-index:1; }
+.hero-inner { z-index:2; }
+.lcp-portrait>div { box-shadow:0 16px 36px #00072d14; }
+.lcp-portrait .photo { border-radius:10px 10px 0 0; }
+.lcp-copy .section-heading h2::after { content:''; display:block; width:40px; height:2px; background:currentColor; margin-top:18px; }
+.functional-editor,.function-editor-block,.functional-question-list { min-width:0; }
+.function-editor-block { padding-bottom:18px; }
+.functional-question-list { display:flex; flex-direction:column; gap:18px; }
+.functional-question-editor { border-top:1px solid var(--border); padding-top:18px; }
+.functional-question-editor .repeat-controls { padding-bottom:0; margin-bottom:0; border-bottom:0; }
+.functional-question-editor textarea { min-height:90px; }
+.function-editor-block .add-question { margin-top:20px; }
+.function-editor-block h4 { margin:0; }
+@media (max-width:1100px) { .guideline-contacts { grid-template-columns:minmax(0,1fr); } }
+@media (max-width:767px) {
+ .commitments .commitment-card { padding:22px 18px; }
+ .commitment-card .card-number { top:10px; right:12px; font-size:78px; }
+ .functional-accordion .accordion-inside { padding:0 4px 20px; }
+ .guideline-contacts>a { font-size:14px; }
+}

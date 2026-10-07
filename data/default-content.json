@@ -1,0 +1,873 @@
+{
+  "settings": {
+    "websiteTitle": "AIESEC in Suez",
+    "lcName": "AIESEC IN SUEZ",
+    "applicationYear": "27.28",
+    "primaryColor": "#00072D",
+    "secondaryColor": "#051650",
+    "accentColor": "#A9BBFF",
+    "logo": "",
+    "favicon": "/favicon.svg",
+    "seoTitle": "AIESEC in Suez | Executive Board Application {year}",
+    "seoDescription": "Your next chapter of leadership. Explore the Executive Board application, commitments, questionnaire and submission guidelines for AIESEC in Suez.",
+    "ogTitle": "Executive Board Application {year}",
+    "ogDescription": "AIESEC in Suez. A story that will never end.",
+    "socialImage": "",
+    "pattern": {
+      "imageUrl": "",
+      "opacity": 0.06,
+      "size": "480px",
+      "position": "center",
+      "repeat": "repeat",
+      "blendMode": "soft-light",
+      "gradientOverlay": true
+    }
+  },
+  "navigation": [
+    {
+      "id": "nav-0",
+      "enabled": true,
+      "order": 0,
+      "label": "Home",
+      "url": "#home",
+      "inMore": false,
+      "newTab": false
+    },
+    {
+      "id": "nav-1",
+      "enabled": true,
+      "order": 1,
+      "label": "About",
+      "url": "#about",
+      "inMore": false,
+      "newTab": false
+    },
+    {
+      "id": "nav-2",
+      "enabled": true,
+      "order": 2,
+      "label": "Timeline",
+      "url": "#timeline",
+      "inMore": false,
+      "newTab": false
+    },
+    {
+      "id": "nav-3",
+      "enabled": true,
+      "order": 3,
+      "label": "EB Commitments",
+      "url": "#commitments",
+      "inMore": false,
+      "newTab": false
+    },
+    {
+      "id": "nav-4",
+      "enabled": true,
+      "order": 4,
+      "label": "Application Package",
+      "url": "#package",
+      "inMore": false,
+      "newTab": false
+    },
+    {
+      "id": "nav-5",
+      "enabled": true,
+      "order": 5,
+      "label": "Questionnaire",
+      "url": "/questionnaire",
+      "inMore": false,
+      "newTab": false
+    },
+    {
+      "id": "nav-6",
+      "enabled": true,
+      "order": 6,
+      "label": "Direction",
+      "url": "#direction",
+      "inMore": false,
+      "newTab": false
+    },
+    {
+      "id": "nav-7",
+      "enabled": true,
+      "order": 7,
+      "label": "Personal Assessment",
+      "url": "#assessment",
+      "inMore": true,
+      "newTab": false
+    },
+    {
+      "id": "nav-8",
+      "enabled": true,
+      "order": 8,
+      "label": "CV",
+      "url": "#cv",
+      "inMore": true,
+      "newTab": false
+    },
+    {
+      "id": "nav-9",
+      "enabled": true,
+      "order": 9,
+      "label": "Submission Guidelines",
+      "url": "#submission",
+      "inMore": true,
+      "newTab": false
+    },
+    {
+      "id": "nav-10",
+      "enabled": false,
+      "order": 10,
+      "label": "Custom Sections",
+      "url": "#custom-sections",
+      "inMore": true,
+      "newTab": false
+    }
+  ],
+  "home": {
+    "enabled": true,
+    "eyebrow": "THE NEXT CHAPTER STARTS WITH YOU"
+  },
+  "hero": {
+    "enabled": true,
+    "title": "EXECUTIVE BOARD",
+    "subtitle": "APPLICATION {year}",
+    "description": "A STORY THAT WILL NEVER END.",
+    "backgroundWord": "LEAD",
+    "backgroundWordOpacity": 0.08,
+    "backgroundWordSize": "large",
+    "backgroundWordPosition": "center",
+    "backgroundWordUppercase": true,
+    "backgroundWordMobileVisible": true,
+    "backgroundWordDesktopVisible": true,
+    "backgroundImage": "",
+    "heroImages": [
+      {
+        "id": "photo-main",
+        "enabled": true,
+        "order": 0,
+        "url": "",
+        "alt": "Our people. Our story."
+      },
+      {
+        "id": "photo-2",
+        "enabled": true,
+        "order": 1,
+        "url": "",
+        "alt": "Shared moments"
+      },
+      {
+        "id": "photo-3",
+        "enabled": true,
+        "order": 2,
+        "url": "",
+        "alt": "One Suez"
+      }
+    ],
+    "patternImage": "",
+    "overlayOpacity": 0.6,
+    "primaryButtonText": "Explore application",
+    "primaryButtonUrl": "#package",
+    "secondaryButtonText": "View timeline",
+    "secondaryButtonUrl": "#timeline"
+  },
+  "lcpWord": {
+    "enabled": true,
+    "title": "LCP WORD",
+    "subtitle": "A LETTER TO THE NEXT GENERATION",
+    "name": "",
+    "role": "LCPe",
+    "term": "{year}",
+    "message": "The LCP message for this application cycle will be shared here soon.",
+    "photoUrl": "",
+    "photoBackground": "#051650",
+    "photoObjectPosition": "center",
+    "sectionBackground": "#F7F8FA",
+    "textColor": "#00072D",
+    "signatureImage": "",
+    "quote": "",
+    "patternImage": ""
+  },
+  "about": {
+    "enabled": true,
+    "title": "One LC.\nEndless possibilities.",
+    "subtitle": "ABOUT AIESEC IN SUEZ",
+    "paragraphs": "Leadership begins with the decision to take responsibility. The Executive Board experience is an opportunity to shape the direction of AIESEC in Suez, support its people and contribute to its next chapter.",
+    "story": "Explore the commitments, reflect on your experience and prepare an application that tells your story.",
+    "images": [],
+    "statistics": [],
+    "values": [],
+    "quote": ""
+  },
+  "timeline": {
+    "enabled": true,
+    "title": "Your journey,\nstep by step.",
+    "subtitle": "THE APPLICATION TIMELINE",
+    "events": [
+      {
+        "id": "event-0",
+        "enabled": true,
+        "order": 0,
+        "title": "Application Release",
+        "date": "",
+        "description": "Official details will be announced.",
+        "icon": "calendar",
+        "type": "Application Release",
+        "time": "",
+        "link": ""
+      },
+      {
+        "id": "event-1",
+        "enabled": true,
+        "order": 1,
+        "title": "Application deadline",
+        "date": "",
+        "description": "Official details will be announced.",
+        "icon": "calendar",
+        "type": "DDL",
+        "time": "",
+        "link": ""
+      },
+      {
+        "id": "event-2",
+        "enabled": true,
+        "order": 2,
+        "title": "Elections",
+        "date": "",
+        "description": "Official details will be announced.",
+        "icon": "calendar",
+        "type": "Elections",
+        "time": "",
+        "link": ""
+      },
+      {
+        "id": "event-3",
+        "enabled": true,
+        "order": 3,
+        "title": "Selections",
+        "date": "",
+        "description": "Official details will be announced.",
+        "icon": "calendar",
+        "type": "Selections",
+        "time": "",
+        "link": ""
+      },
+      {
+        "id": "event-4",
+        "enabled": true,
+        "order": 4,
+        "title": "Announcement",
+        "date": "",
+        "description": "Official details will be announced.",
+        "icon": "calendar",
+        "type": "Announcement",
+        "time": "",
+        "link": ""
+      }
+    ]
+  },
+  "commitments": {
+    "enabled": true,
+    "title": "Show up.\nMake it matter.",
+    "subtitle": "EB COMMITMENTS",
+    "items": [
+      {
+        "id": "item-0",
+        "enabled": true,
+        "order": 0,
+        "number": "01",
+        "title": "EBM",
+        "subtitle": "",
+        "description": "Details and frequency will be confirmed.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": ""
+      },
+      {
+        "id": "item-1",
+        "enabled": true,
+        "order": 1,
+        "number": "02",
+        "title": "LCM",
+        "subtitle": "",
+        "description": "Details and frequency will be confirmed.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": ""
+      },
+      {
+        "id": "item-2",
+        "enabled": true,
+        "order": 2,
+        "number": "03",
+        "title": "LC WHs",
+        "subtitle": "",
+        "description": "Details and frequency will be confirmed.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": ""
+      },
+      {
+        "id": "item-3",
+        "enabled": true,
+        "order": 3,
+        "number": "04",
+        "title": "MAHD",
+        "subtitle": "",
+        "description": "Details and frequency will be confirmed.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": ""
+      },
+      {
+        "id": "item-4",
+        "enabled": true,
+        "order": 4,
+        "number": "05",
+        "title": "MOMENTUM",
+        "subtitle": "",
+        "description": "Details and frequency will be confirmed.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": ""
+      },
+      {
+        "id": "item-5",
+        "enabled": true,
+        "order": 5,
+        "number": "06",
+        "title": "FUSION",
+        "subtitle": "",
+        "description": "Details and frequency will be confirmed.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": ""
+      },
+      {
+        "id": "item-6",
+        "enabled": true,
+        "order": 6,
+        "number": "07",
+        "title": "ACTIVATE",
+        "subtitle": "",
+        "description": "Details and frequency will be confirmed.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": ""
+      },
+      {
+        "id": "item-7",
+        "enabled": true,
+        "order": 7,
+        "number": "08",
+        "title": "COMMISSION MEETING",
+        "subtitle": "",
+        "description": "Details and frequency will be confirmed.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": ""
+      }
+    ]
+  },
+  "package": {
+    "enabled": true,
+    "title": "Build your\napplication.",
+    "subtitle": "THE APPLICATION PACKAGE",
+    "items": [
+      {
+        "id": "item-0",
+        "enabled": true,
+        "order": 0,
+        "number": "01",
+        "title": "Questionnaire",
+        "subtitle": "",
+        "description": "Reflect on who you are and the leader you want to become.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": "/questionnaire"
+      },
+      {
+        "id": "item-1",
+        "enabled": true,
+        "order": 1,
+        "number": "02",
+        "title": "Direction",
+        "subtitle": "",
+        "description": "Set out your functional vision and action steps.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": "#direction"
+      },
+      {
+        "id": "item-2",
+        "enabled": true,
+        "order": 2,
+        "number": "03",
+        "title": "Functional Block",
+        "subtitle": "",
+        "description": "Prepare your responses for your chosen function.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": "#functional"
+      },
+      {
+        "id": "item-3",
+        "enabled": true,
+        "order": 3,
+        "number": "04",
+        "title": "Endorsement Letters",
+        "subtitle": "",
+        "description": "Endorsement requirements will be confirmed.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": "#submission"
+      },
+      {
+        "id": "item-4",
+        "enabled": true,
+        "order": 4,
+        "number": "05",
+        "title": "Personal Assessment",
+        "subtitle": "",
+        "description": "Explore your strengths and how you work.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": "#assessment"
+      },
+      {
+        "id": "item-5",
+        "enabled": true,
+        "order": 5,
+        "number": "06",
+        "title": "CV",
+        "subtitle": "",
+        "description": "Your experience, in one A4 PDF page.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": "#cv"
+      },
+      {
+        "id": "item-6",
+        "enabled": true,
+        "order": 6,
+        "number": "07",
+        "title": "Personal Photo",
+        "subtitle": "",
+        "description": "Include your personal photo in the package.",
+        "frequency": "",
+        "icon": "users",
+        "quarter": "",
+        "link": "#submission"
+      }
+    ]
+  },
+  "questionnaire": {
+    "enabled": true,
+    "title": "Start with\nyour story.",
+    "subtitle": "QUESTIONNAIRE",
+    "groups": [
+      {
+        "id": "group-0",
+        "enabled": true,
+        "order": 0,
+        "title": "PERSONAL",
+        "description": "",
+        "questions": [
+          {
+            "id": "q-0",
+            "enabled": true,
+            "order": 0,
+            "text": "Who are you?"
+          },
+          {
+            "id": "q-1",
+            "enabled": true,
+            "order": 1,
+            "text": "What is your drive to continue in AIESEC and apply for an EB? What do you expect to gain from such experience?"
+          },
+          {
+            "id": "q-2",
+            "enabled": true,
+            "order": 2,
+            "text": "What is your short-term and long-term goal? What are the steps you took towards achieving this goal? How will the EB term help you reach it?"
+          },
+          {
+            "id": "q-3",
+            "enabled": true,
+            "order": 3,
+            "text": "What are your core values? How do your behaviors demonstrate your core values?"
+          },
+          {
+            "id": "q-4",
+            "enabled": true,
+            "order": 4,
+            "text": "List 3 strengths and weaknesses in your personality and your plan to capitalize your strengths and overcome your weaknesses."
+          }
+        ]
+      },
+      {
+        "id": "group-1",
+        "enabled": true,
+        "order": 1,
+        "title": "LEADERSHIP",
+        "description": "",
+        "questions": [
+          {
+            "id": "q-0",
+            "enabled": true,
+            "order": 0,
+            "text": "Define leadership from your point of view."
+          },
+          {
+            "id": "q-1",
+            "enabled": true,
+            "order": 1,
+            "text": "What is your leadership style? Evaluate how effective it is."
+          },
+          {
+            "id": "q-2",
+            "enabled": true,
+            "order": 2,
+            "text": "Who is your role model in leadership and why did you choose him/her?"
+          },
+          {
+            "id": "q-3",
+            "enabled": true,
+            "order": 3,
+            "text": "What leader do you want to see yourself as by the end of your term?"
+          }
+        ]
+      },
+      {
+        "id": "group-2",
+        "enabled": true,
+        "order": 2,
+        "title": "MANAGEMENT",
+        "description": "",
+        "questions": [
+          {
+            "id": "q-0",
+            "enabled": true,
+            "order": 0,
+            "text": "How do you make your decisions?"
+          },
+          {
+            "id": "q-1",
+            "enabled": true,
+            "order": 1,
+            "text": "Give an example of a tough decision you had to make."
+          },
+          {
+            "id": "q-2",
+            "enabled": true,
+            "order": 2,
+            "text": "How do you keep yourself motivated in your dark times?"
+          },
+          {
+            "id": "q-3",
+            "enabled": true,
+            "order": 3,
+            "text": "How do you manage your time to balance among different responsibilities and duties?"
+          },
+          {
+            "id": "q-4",
+            "enabled": true,
+            "order": 4,
+            "text": "How do you want to see your people by the end of their experience with you? And what is your plan to achieve this?"
+          }
+        ]
+      },
+      {
+        "id": "group-3",
+        "enabled": true,
+        "order": 3,
+        "title": "AIESEC",
+        "description": "",
+        "questions": [
+          {
+            "id": "q-0",
+            "enabled": true,
+            "order": 0,
+            "text": "In your point of view, how is AIESEC affecting Egyptian youth?"
+          },
+          {
+            "id": "q-1",
+            "enabled": true,
+            "order": 1,
+            "text": "How do you think AIESEC can be more relevant and start to impact the world through every single exchange we do?"
+          },
+          {
+            "id": "q-2",
+            "enabled": true,
+            "order": 2,
+            "text": "How will you ensure the positioning of your LC in the national plenary?"
+          },
+          {
+            "id": "q-3",
+            "enabled": true,
+            "order": 3,
+            "text": "How will you contribute to AIESEC 2030 as an EB member?"
+          }
+        ]
+      }
+    ]
+  },
+  "direction": {
+    "enabled": true,
+    "title": "FUNCTIONAL\nDIRECTION",
+    "subtitle": "TURN YOUR VISION INTO A PLAN",
+    "instruction": "IN GOOGLE SHEET",
+    "steps": [
+      {
+        "id": "q-0",
+        "enabled": true,
+        "order": 0,
+        "text": "Make a SWOT & TOWS analysis for the previous term."
+      },
+      {
+        "id": "q-1",
+        "enabled": true,
+        "order": 1,
+        "text": "Function focuses and strategies for each one."
+      },
+      {
+        "id": "q-2",
+        "enabled": true,
+        "order": 2,
+        "text": "Numerical goals."
+      },
+      {
+        "id": "q-3",
+        "enabled": true,
+        "order": 3,
+        "text": "Culture you will implement in your function with action steps."
+      },
+      {
+        "id": "q-4",
+        "enabled": true,
+        "order": 4,
+        "text": "Create your function routine for summer peak."
+      },
+      {
+        "id": "q-5",
+        "enabled": true,
+        "order": 5,
+        "text": "Function structure."
+      }
+    ]
+  },
+  "functions": {
+    "enabled": true,
+    "title": "Go deeper into\nyour function.",
+    "subtitle": "FUNCTIONAL BLOCK",
+    "groups": [
+      {
+        "id": "function-0",
+        "enabled": true,
+        "order": 0,
+        "title": "IGV",
+        "questions": []
+      },
+      {
+        "id": "function-1",
+        "enabled": true,
+        "order": 1,
+        "title": "OGV",
+        "questions": []
+      },
+      {
+        "id": "function-2",
+        "enabled": true,
+        "order": 2,
+        "title": "B2C",
+        "questions": []
+      },
+      {
+        "id": "function-3",
+        "enabled": true,
+        "order": 3,
+        "title": "IGTe",
+        "questions": []
+      },
+      {
+        "id": "function-4",
+        "enabled": true,
+        "order": 4,
+        "title": "OGTa",
+        "questions": []
+      },
+      {
+        "id": "function-5",
+        "enabled": true,
+        "order": 5,
+        "title": "TM",
+        "questions": []
+      },
+      {
+        "id": "function-6",
+        "enabled": true,
+        "order": 6,
+        "title": "F&L",
+        "questions": []
+      },
+      {
+        "id": "function-7",
+        "enabled": true,
+        "order": 7,
+        "title": "BD",
+        "questions": []
+      }
+    ]
+  },
+  "personalAssessment": {
+    "enabled": true,
+    "title": "Know yourself.\nLead with intention.",
+    "subtitle": "PERSONAL ASSESSMENT",
+    "items": [
+      {
+        "id": "assessment-0",
+        "enabled": true,
+        "order": 0,
+        "title": "16 Personalities",
+        "description": "The official assessment link will be added here.",
+        "url": "",
+        "icon": "compass",
+        "newTab": true
+      },
+      {
+        "id": "assessment-1",
+        "enabled": true,
+        "order": 1,
+        "title": "Right Left Brain Test",
+        "description": "The official assessment link will be added here.",
+        "url": "",
+        "icon": "compass",
+        "newTab": true
+      },
+      {
+        "id": "assessment-2",
+        "enabled": true,
+        "order": 2,
+        "title": "Enneagram Test",
+        "description": "The official assessment link will be added here.",
+        "url": "",
+        "icon": "compass",
+        "newTab": true
+      },
+      {
+        "id": "assessment-3",
+        "enabled": true,
+        "order": 3,
+        "title": "IQ Test",
+        "description": "The official assessment link will be added here.",
+        "url": "",
+        "icon": "compass",
+        "newTab": true
+      }
+    ]
+  },
+  "cv": {
+    "enabled": true,
+    "title": "Your experience.\nOne page.",
+    "subtitle": "CV",
+    "description": "One A4 PDF page max.",
+    "templateUrl": "",
+    "exampleUrl": ""
+  },
+  "submissionGuidelines": {
+    "enabled": true,
+    "title": "The final\nchecklist.",
+    "subtitle": "SUBMISSION & GUIDELINES",
+    "cards": [
+      {
+        "id": "guideline-0",
+        "enabled": true,
+        "order": 0,
+        "title": "Package your application",
+        "description": "Send one \".zip or .rar\" file named according to the application naming rule. The official naming rule will be confirmed."
+      },
+      {
+        "id": "guideline-1",
+        "enabled": true,
+        "order": 1,
+        "title": "Check every requirement",
+        "description": "If the application does not fulfill all requirements, the candidate may be rejected from the process."
+      },
+      {
+        "id": "guideline-2",
+        "enabled": true,
+        "order": 2,
+        "title": "Write in English",
+        "description": "The application must be written entirely in English. A confirmation will be sent according to the official validation process."
+      },
+      {
+        "id": "guideline-3",
+        "enabled": true,
+        "order": 3,
+        "title": "Send your application",
+        "description": "Application folder must be sent to both contacts below."
+      }
+    ],
+    "contacts": [
+      {
+        "id": "contact-1",
+        "enabled": true,
+        "order": 0,
+        "role": "LCPe / Current",
+        "email": "eyadalaa@aiesec.net"
+      },
+      {
+        "id": "contact-2",
+        "enabled": true,
+        "order": 1,
+        "role": "LCPc / Elected",
+        "email": "Mayarhalfaya@aiesec.net"
+      }
+    ],
+    "contactCardId": "guideline-3"
+  },
+  "customSections": [],
+  "footer": {
+    "developerCredit": "Developed by Mohammed Tamer",
+    "title": "AIESEC IN SUEZ",
+    "description": "Executive Board Application {year}",
+    "quickLinks": [
+      {
+        "id": "footer-0",
+        "enabled": true,
+        "order": 0,
+        "label": "Timeline",
+        "url": "#timeline"
+      },
+      {
+        "id": "footer-1",
+        "enabled": true,
+        "order": 1,
+        "label": "Application Package",
+        "url": "#package"
+      },
+      {
+        "id": "footer-2",
+        "enabled": true,
+        "order": 2,
+        "label": "Submission Guidelines",
+        "url": "#submission"
+      }
+    ],
+    "socialLinks": []
+  }
+}

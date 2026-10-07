@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.next-verify/
+.env*
+!.env.example
+.local/
+*.tsbuildinfo
+test-results/
