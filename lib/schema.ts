@@ -69,6 +69,7 @@ export const contentSchema = z.object({
  questionnaire:z.object({...section,groups:z.array(group).max(30)}),
  direction:z.object({...section,instruction:text,steps:z.array(questionSchema).max(50)}),
  functions:z.object({...section,groups:z.array(functionGroupSchema).max(30)}),
+ endorsementLetter:z.object({...section,description:text,templateUrl:safeUrl,buttonText:text}).default({enabled:true,title:'Endorsement Letter',subtitle:'Application documents',description:'Include endorsement letters from the following:\n\n1. Someone you led\n2. Someone who led you\n3. Your parents\n4. Someone from the national plenary\n5. A current EB member',templateUrl:'',buttonText:'View endorsement letter template'}),
  personalAssessment:z.object({...section,items:z.array(z.object({...base,title:text,description:text,url:safeUrl,icon:item.shape.icon,newTab:z.boolean()})).max(30)}),
  cv:z.object({...section,description:text,templateUrl:safeUrl,exampleUrl:safeUrl}),
  submissionGuidelines:z.preprocess(migrateSubmission,z.object({...section,cards:z.array(z.object({...base,title:text,description:text})).max(30),contactCardId:z.string(),contacts:z.array(z.object({...base,role:text,email:z.email()})).max(10)})),
@@ -79,3 +80,4 @@ export type SiteContent = z.infer<typeof contentSchema>;
 export type Pattern = SiteContent['settings']['pattern'];
 export const ordered = <T extends {enabled:boolean;order:number}>(items:T[]) => items.filter(i=>i.enabled).toSorted((a,b)=>a.order-b.order);
 export const withYear = (text:string, year:string) => text.replaceAll('{year}',year);
+
