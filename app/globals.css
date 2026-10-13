@@ -13,3 +13,19 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;animation-iteration-count:1!important}}
 
 .brand-logo{float:left;margin-right:10px;object-fit:contain;max-height:36px}.footer-bottom{align-items:center}.admin-mobile-select select{display:block;width:100%;background:white;color:var(--navy);border:0;font:inherit}.hero-lc,.hero-bottom,.portrait-caption{font-size:12px}.nav-links{font-size:13px}.brand small{font-size:10px}@media(max-width:374px){.hero-bottom{font-size:9px;gap:12px}.hero-bottom>span{max-width:50%}}
+
+/* Endorsement cards and navigation/editor layout refinements */
+.endorsement-intro{max-width:65ch;color:var(--muted);white-space:pre-line;margin-bottom:26px}
+.endorsement-grid{list-style:none;padding:0;margin:0 0 28px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.endorsement-card{min-height:180px;padding:26px;background:#fff;border:1px solid #dfe4ee;border-radius:16px;box-shadow:0 5px 18px #00072d04;display:flex;flex-direction:column;gap:24px;transition:transform .2s,border-color .2s}
+.endorsement-card:hover{transform:translateY(-3px);border-color:#99a9cc}
+.endorsement-number{display:grid;place-items:center;width:42px;height:42px;background:#eef2fc;border-radius:12px;font-size:14px;font-weight:600;color:#52638d}
+.endorsement-card p{margin:0;font-family:'Space Grotesk',sans-serif;font-size:21px;line-height:1.45;white-space:pre-line;overflow-wrap:anywhere}
+.admin-nav-group{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#8997b8;margin:22px 13px 8px}
+.admin-sidebar nav button{width:100%;line-height:1.5}.admin-sidebar{scrollbar-width:thin;scrollbar-color:#39446a var(--navy)}
+.admin-topbar .save-state{max-width:230px}.admin-body{width:100%}.admin-panel,.nested-fields,.repeatable{min-width:0}
+.nav-inner>.brand{flex-shrink:0}.nav-links>a{white-space:nowrap}.more-menu{max-height:65dvh;overflow:auto;width:270px}.more-menu a{border-radius:5px}.more-menu a.active{background:#ffffff16}
+.functional-accordion .accordion-title{flex:1}.functional-accordion .accordion-inside{padding-left:4px}
+.commitment-copy{position:relative;z-index:1}.commitment-card .card-number{opacity:.65;pointer-events:none}.commitment-card{min-height:170px}
+@media(max-width:1023px){.endorsement-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-shell{grid-template-columns:190px minmax(0,1fr)}.admin-topbar>strong{flex-basis:100%}.more-menu{width:100%;max-height:none}.nav-links.open{overscroll-behavior:contain}}
+@media(max-width:767px){.endorsement-grid{grid-template-columns:1fr;gap:12px}.endorsement-card{min-height:120px;padding:22px;flex-direction:row;align-items:flex-start;gap:18px}.endorsement-number{flex-shrink:0}.endorsement-card p{font-size:19px}.admin-shell{display:block}.admin-topbar{position:relative}.admin-topbar .save-state{flex-basis:100%;max-width:none}.admin-topbar .button{flex:1;white-space:nowrap}.admin-mobile-select{margin-top:4px}.admin-body{padding:24px 16px}.admin-mobile-select select{min-height:40px}.dashboard-stat strong{font-size:25px;overflow-wrap:anywhere}.nav-links{max-height:calc(100dvh - 76px)}}
