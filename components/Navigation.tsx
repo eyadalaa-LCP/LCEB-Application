@@ -15,8 +15,16 @@ export default function Navigation({content,inner=false}:{content:SiteContent;in
  const sequence=['#home','#lcp-word','#about','#timeline','#commitments','#package','#questionnaire','#direction','#functional','#endorsement-letter','#assessment','#cv','#personal-photo','#submission'];
  const rank=(url:string)=>{const index=sequence.indexOf(url==='/questionnaire'?'#questionnaire':url);return index<0?100:index;};
  items.sort((a,b)=>rank(a.url)-rank(b.url)||a.order-b.order);
- const primary=items.filter(i=>!i.inMore).slice(0,4);
- const overflow=items.filter(i=>!primary.some(p=>p.id===i.id));
+ const seenDestinations=new Set<string>();
+ const uniqueItems=items.filter(item=>{
+  const url=item.url.trim();
+  const destination=!url||url==='/'||url==='/#home'?'#home':url.startsWith('/#')?url.slice(1):url;
+  if(seenDestinations.has(destination))return false;
+  seenDestinations.add(destination);
+  return true;
+ });
+ const primary=uniqueItems.filter(i=>!i.inMore).slice(0,4);
+ const overflow=uniqueItems.filter(i=>!primary.includes(i));
  const close=()=>{setOpen(false);if(more.current)more.current.open=false;};
  const href=(url:string)=>inner&&url.startsWith('#')?`/${url}`:url;
  const render=(item:typeof items[number])=><Link key={item.id} href={href(item.url)||'/'} target={item.newTab?'_blank':undefined} rel={item.newTab?'noopener noreferrer':undefined} onClick={close} className={active===item.url.slice(1)?'active':''} aria-current={active===item.url.slice(1)?'location':undefined}>{item.label}</Link>;
